@@ -2092,7 +2092,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1446422456}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &852259660
 PrefabInstance:
@@ -2552,7 +2552,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1446422456}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1092927376
 PrefabInstance:
@@ -3771,8 +3771,6 @@ Transform:
   m_Children:
   - {fileID: 330585546}
   - {fileID: 410087041}
-  - {fileID: 832575519}
-  - {fileID: 1054176047}
   - {fileID: 2091910977}
   - {fileID: 1022973}
   m_Father: {fileID: 0}
@@ -5598,6 +5596,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1054176047}
+  - {fileID: 832575519}
   - {fileID: 1446422456}
   - {fileID: 1881448143}
   - {fileID: 1981512010}
