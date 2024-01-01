@@ -40,6 +40,8 @@ public class Player : MonoBehaviour,IKitchenObjectParent
 
    private void GameInputOnOnInteractAlternateAction(object sender, EventArgs e)
    {
+      if (!KitchenGameManager.Instance.IsGamePlaying()) return;
+      
       if (_selectedCounter != null) {
          _selectedCounter.InteractAlternate(this);
       }
@@ -47,6 +49,8 @@ public class Player : MonoBehaviour,IKitchenObjectParent
 
    private void GameInputOnOnInteractAction(object sender, EventArgs e)
    {
+      if (!KitchenGameManager.Instance.IsGamePlaying()) return;
+      
       if (_selectedCounter != null) {
          _selectedCounter.Interact(this);
       }
