@@ -2,16 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class StoveBurnWarningUI : MonoBehaviour
+public class StoveBurnFlashingBarUI : MonoBehaviour
 {
+    private const string IS_FLASHING = "IsFlashing";
     [SerializeField] private StoveCounter stoveCounter;
+
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Start()
     {
         stoveCounter.OnProgressChanged+=StoveCounter_OnProgressChanged;
-        Hide();
+        animator.SetBool(IS_FLASHING,false);
     }
     
 
@@ -19,24 +26,9 @@ public class StoveBurnWarningUI : MonoBehaviour
     {
         float burnShowProgressAmount = 0.5f;
         bool show = stoveCounter.IsFried() && e.progressNormalized >= burnShowProgressAmount;
+        
+        animator.SetBool(IS_FLASHING,show);
 
-        if (show)
-        {
-            Show();
-        }
-        else
-        {
-            Hide();
-        }
     }
 
-    private void Show()
-    {
-        gameObject.SetActive(true);
-    }
-
-    private void Hide()
-    {
-        gameObject.SetActive(false);
-    }
 }

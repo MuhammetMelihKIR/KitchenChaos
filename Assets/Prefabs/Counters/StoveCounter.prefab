@@ -503,8 +503,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 936675133442472698, guid: 892ee3ea6b3f91746892edf7e569be4b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8445921280953469128}
+    - targetCorrespondingSourceObject: {fileID: 936675133442472698, guid: 892ee3ea6b3f91746892edf7e569be4b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2861428700322630127}
   m_SourcePrefab: {fileID: 100100000, guid: 892ee3ea6b3f91746892edf7e569be4b, type: 3}
+--- !u!1 &230115537282088766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 936675133442472698, guid: 892ee3ea6b3f91746892edf7e569be4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1138906917305353668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8445921280953469128
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230115537282088766}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1dee4f161cc89643b2ecc6ded3aa738, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2861428700322630127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230115537282088766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f40983ab818f14ebfa74bf4010db4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoveCounter: {fileID: 8235932893880476000}
 --- !u!224 &3676675855426731252 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4379778105859881264, guid: 892ee3ea6b3f91746892edf7e569be4b,
