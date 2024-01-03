@@ -81,6 +81,10 @@ public class SoundManager : MonoBehaviour
     {
         PlaySound(audioClipRefSO.warning,Vector3.zero);
     }
+    public void PlayWarningSound( Vector3 position)
+    {
+        PlaySound(audioClipRefSO.warning,Vector3.zero);
+    }
 
     public void ChangeVolume()
     {
